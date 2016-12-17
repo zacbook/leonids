@@ -16,11 +16,20 @@
       {% for page in site.pages %} {% if page.title %}
       <li class="nav-item">
         <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a>
+        {% if author.feedinnav %}
+        <span>/</span>
+        {% else %}
         {% unless forloop.last %}
           <span>/</span>
         {% endunless %}
+        {% endif %}
       </li>
       {% endif %} {% endfor %}
+      {% if author.feedinnav %}
+      <li class="nav-item">
+        <a href="{{site.url}}/feed.xml">Feed</a>
+      </li>
+      {% endif %}
     </ul>
   </nav>
   {% include social-links.html %}

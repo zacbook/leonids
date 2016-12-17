@@ -37,6 +37,7 @@ owner:
   avatar: leonids-logo.png
   job: "A jekyll theme"
   bio: "A simple and awesome blog theme powered by jekyll."
+  feedinnav: true
   email:
   disqus-shortname:
   twitter: #username

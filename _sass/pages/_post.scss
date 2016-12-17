@@ -59,6 +59,16 @@ section.post {
 	}
 }
 
+.page-title-link {
+	color: $primary;
+	font-size: 23px;
+	margin-left: 16px;
+	&:hover,
+	&:focus {
+		color: lighten($primary, 14%);
+	}
+}
+
 // Post meta
 .post-meta {
   font-size: 13px;
